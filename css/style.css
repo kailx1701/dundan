@@ -57,3 +57,6 @@
 #stage .lyric-wrap.no-wish-lines{grid-template-rows:minmax(0,1fr) auto}
 #stage .lyric-wrap.no-wish-lines .wish-heading-zone{align-self:stretch}
 .video-fallback[hidden]{display:none!important}
+/* Keep the buffering veil from swallowing native mobile video controls. */
+.video-loading{pointer-events:none}
+.video-play,.video-replay,.close-button,#showVideo{touch-action:manipulation;pointer-events:auto}
