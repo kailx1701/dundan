@@ -1,6 +1,6 @@
 window.GIFT_CONFIG={
  friendName:'Đủn',selfPronoun:'tôi',friendPronoun:'bà',ui:{showPageLabel:true,showWishLines:false,showEqualizer:false},title:'HAPPY 20/10',subTitle:'Đủn',
- landingTitle:'{friendName} ơi, {selfPronoun} có quà cho {friendPronoun} nè!',landingKicker:'Tối nay sân khấu này thuộc về {friendName}',landingHint:'Một đêm pháo hoa đang chờ {friendPronoun} đó ✨',chargeLabel:'GIỮ ĐỂ NẠP PHÁO',quickStart:'Bấm nhanh ✦',chargeHint:'Giữ lâu hơn nữa!',
+ landingTitle:'{friendName} ơi, {selfPronoun} có quà cho {friendPronoun} nè!',chargeLabel:'GIỮ ĐỂ NẠP PHÁO',quickStart:'Bấm nhanh ✦',chargeHint:'Giữ lâu hơn nữa!',
  autoAdvance:true,autoAdvanceMs:8200,
  wishPages:[
   {id:'bùng-nổ',label:'TRANG 1',headline:'BÙNG NỔ!',theme:{background:'#0c2c84',accent:'#4cc9f0',secondary:'#ffd166',particles:['#1e6bff','#4cc9f0','#ffffff','#ffd166']},fx:'burst',sound:'boom'},
