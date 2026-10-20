@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#0b1d51">
+<meta name="description" content="Một đêm pháo hoa dành riêng cho Đủn."><title>Gửi riêng cho Đủn</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎆%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;800;900&family=Charm:wght@400;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css">
+</head><body>
+<canvas id="sky" aria-hidden="true"></canvas><div class="skywash" aria-hidden="true"></div><div class="city" aria-hidden="true"></div>
+<main id="app">
+<section id="landing" class="scene active" aria-labelledby="hello"><div class="intro"><p class="eyebrow" id="landingKicker"></p><h1 id="hello"></h1><p class="hint" id="chargeHint"></p></div>
+<button id="charge" class="charge" aria-label="Giữ để nạp pháo"><svg class="charge-ring" viewBox="0 0 220 220" aria-hidden="true"><circle class="ring-track" cx="110" cy="110" r="99"/><circle id="ringProgress" class="ring-progress" cx="110" cy="110" r="99"/></svg><span class="charge-icon">✦</span><strong id="chargeLabel"></strong></button><button id="quickStart" class="text-button"></button><p class="keyboard-note">Giữ phím <kbd>Space</kbd> hoặc <kbd>Enter</kbd> để nạp</p></section>
+<section id="countdown" class="scene countdown" aria-live="assertive"><div id="countNumber">3</div></section>
+<section id="stage" class="scene"><div class="stage-lights" aria-hidden="true"><i></i><i></i><i></i></div><div class="stage-top"><div class="now-playing" id="nowPlaying">♪ <span id="nowPlayingTitle"></span><small id="audioStatus" hidden></small><button id="audioEnable" class="audio-enable" type="button" hidden></button></div><div class="stage-controls"><button id="trackButton" class="icon-button" aria-label="Đổi bài">♫ <span>Đổi bài</span></button><button id="muteButton" class="icon-button" aria-label="Tắt âm thanh">◖))</button></div></div>
+<div id="trackPicker" class="track-picker" hidden><h2 id="pickerTitle"></h2><div id="trackList" class="track-list"></div></div>
+<div class="lyric-wrap"><div class="wish-heading-zone"><p id="lyricCount" class="eyebrow"></p><h1 id="lyricText" class="wish-headline"></h1></div><div id="wishLines" class="wish-lines" aria-live="polite"></div><nav class="wish-navigation" aria-label="Điều hướng lời chúc"><button id="wishPrev" class="wish-nav-button" type="button"></button><div id="wishDots" class="wish-dots"></div><button id="wishNext" class="wish-nav-button" type="button"></button><button id="skipWishes" class="text-button"></button><button id="showVideo" class="primary-button" hidden></button></nav></div><div id="wishFxOverlay" class="wish-fx-overlay" aria-hidden="true"></div>
+<div class="visualizer" id="visualizer" aria-hidden="true"></div><div class="pulse-orb" id="pulseOrb" aria-hidden="true"></div></section>
+<section id="videoScene" class="scene video-scene" aria-label="Video trình diễn"><div class="spotlight"></div><div class="video-shell"><button id="closeVideo" class="close-button" aria-label="Đóng video">×</button><h2 id="videoTitle"></h2><p id="videoCaption" class="video-caption"></p><div id="videoFrame" class="video-frame"><video id="performanceVideo" playsinline preload="metadata" controls></video><div id="videoLoading" class="video-loading" hidden><span></span><small>Đang tải video...</small></div><button id="videoPlay" class="video-play" aria-label="Phát video" hidden>▶</button><button id="videoReplayControl" class="video-replay" hidden>Xem lại</button><div id="videoFallback" class="video-fallback" hidden><span>✨</span><strong></strong><p></p><a id="videoOpenExternal" target="_blank" rel="noopener" hidden></a></div></div></div></section>
+<section id="finale" class="scene finale"><div class="finale-copy"><p class="eyebrow" id="finaleKicker"></p><h1 id="finaleTitle"></h1><p id="signature" class="signature"></p><p id="playHint" class="play-hint" hidden></p><div id="replayControls" class="replay-controls" hidden><button id="replay" class="primary-button"></button><button id="replayVideo" class="text-button"></button><button id="finaleTracks" class="text-button"></button></div></div></section>
+<aside id="debugPanel" class="debug-panel" hidden aria-live="polite"></aside></main><div id="flash" aria-hidden="true"></div><div id="toast" role="status" aria-live="polite"></div>
+<script src="js/config.js"></script><script src="js/fireworks.js"></script><script src="js/audio.js"></script><script src="js/main.js"></script>
+</body></html>
+
+
